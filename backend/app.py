@@ -4,6 +4,7 @@ from docx import Document
 import spacy
 
 nlp = spacy.load("en_core_web_sm")
+nlp = spacy.load("./spacy_training/trained_model")
 app = Flask(__name__)
 
 ALLOWED_EXTENSIONS = {'pdf', 'docx'}
